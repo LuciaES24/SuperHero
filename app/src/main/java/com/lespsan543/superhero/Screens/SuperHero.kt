@@ -87,7 +87,8 @@ fun ItemHero(superhero: Superhero,
     Card(border = BorderStroke(2.dp, Color.Red),
         modifier = Modifier
             .fillMaxWidth()
-            .clickable { onItemSelected(superhero) }){
+            .clickable { onItemSelected(superhero) }
+            .padding(4.dp)){
         Column {
             Image(
                 painterResource(id = superhero.photo ),
